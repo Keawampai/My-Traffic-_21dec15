@@ -7,10 +7,37 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="thailand.keawampai.pakpoom.mytraffic.MainActivity">
+    tools:context="thailand.keawampai.pakpoom.mytraffic.MainActivity"
+    android:background="@drawable/bg27">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello March" />
+        android:text="@string/top"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="false"
+        android:textSize="40sp"
+        android:textColorLink="#ffffff"
+        android:textColor="@color/t1"
+        android:theme="@style/AlertDialog.AppCompat.Light"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="About Me"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/textView"
+        android:layout_above="@+id/button"
+        android:layout_margin="20dp"
+        android:background="#64ffffff" />
+
 </RelativeLayout>
