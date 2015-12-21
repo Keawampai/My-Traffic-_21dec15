@@ -17,10 +17,9 @@
         android:id="@+id/textView"
         android:layout_alignParentTop="false"
         android:textSize="40sp"
-        android:textColorLink="#ffffff"
-        android:textColor="@color/t1"
         android:theme="@style/AlertDialog.AppCompat.Light"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text" />
 
     <Button
         android:layout_width="match_parent"
