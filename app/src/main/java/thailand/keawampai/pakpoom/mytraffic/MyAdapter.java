@@ -48,14 +48,14 @@ public class MyAdapter extends BaseAdapter{
     public View getView(int position, View convertView, ViewGroup parent) {
 
         LayoutInflater objLayoutInflater = (LayoutInflater) objContex.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        View objView = objLayoutInflater.inflate(R.layout.my_listview, parent,false);
+        View objView = objLayoutInflater.inflate(R.layout.my_listview, parent, false); 
         //for title
         TextView titleTextView = (TextView) objView.findViewById((R.id.textView2));
         titleTextView.setText(titleStrings[position]);
-
+        //for detail
         TextView detailTextView = (TextView) objView.findViewById(R.id.textView3);
         detailTextView.setText(detailString[position]);
-
+        //for icon
         ImageView IconImageView = (ImageView) objView.findViewById(R.id.imageView);
         IconImageView.setImageResource(iconInts[position]);
         return objView;
